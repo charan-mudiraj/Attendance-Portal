@@ -2,7 +2,9 @@
 $('.navbar-toggler').click(function(){
   $('.navbar-div').slideToggle();
 });
-
+$('.more-btn').click(function(){
+  $('.more-slider').slideToggle();
+});
 // UPLOAD PAGE
 $('.roll-nos').focus(function(){
   $(this).keyup(function(event){
