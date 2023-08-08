@@ -13,28 +13,28 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
 app.get('/', function(req, res){
-//    res.render("./home");
-   res.sendFile(path.join(__dirname + '/views/home.ejs'));
+   res.render("./home");
+//    res.sendFile(path.join(__dirname + '/views/home.ejs'));
 });
 app.get('/upload', function(req, res){
-    // res.render("./upload");
-    res.sendFile(path.join(__dirname + '/views/upload.ejs'));
+    res.render("./upload");
+    // res.sendFile(path.join(__dirname + '/views/upload.ejs'));
 });
 app.get('/status', function(req, res){
-    // res.render("./status");
-    res.sendFile(path.join(__dirname + '/views/status.ejs'));
+    res.render("./status");
+    // res.sendFile(path.join(__dirname + '/views/status.ejs'));
 });
 app.get('/help', function(req, res){
-    // res.render("./help");
-    res.sendFile(path.join(__dirname + '/views/help.ejs'));
+    res.render("./help");
+    // res.sendFile(path.join(__dirname + '/views/help.ejs'));
 });
 app.get('/contact', function(req, res){
-    // res.render("./contact");
-    res.sendFile(path.join(__dirname + '/views/contact.ejs'));
+    res.render("./contact");
+    // res.sendFile(path.join(__dirname + '/views/contact.ejs'));
 });
 app.get('/about', function(req, res){
-    // res.render("./about");
-    res.sendFile(path.join(__dirname + '/views/about.ejs'));
+    res.render("./about");
+    // res.sendFile(path.join(__dirname + '/views/about.ejs'));
 });
 app.get('/names.txt', function(req, res){
     res.sendFile(path.join(__dirname + '/images/names.txt'));
