@@ -45,9 +45,6 @@ app.get('/script.js', function(req, res){
 app.get('/styles.css', function(req, res){
     res.sendFile(path.join(__dirname + '/scripts/styles.css'));
 });
-// app.listen(3000, function(){
-//     console.log("Started the Server at Port 3000.");
-// })
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+app.listen(3000, function(){
+    console.log("Started the Server at Port 3000.");
+})
