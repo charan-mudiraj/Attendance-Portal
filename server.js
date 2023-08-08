@@ -8,6 +8,7 @@ const app = express();
 
 app.use('/scripts', express.static(path.join(__dirname, '/scripts')));
 app.use('/images', express.static(path.join(__dirname, '/images')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
