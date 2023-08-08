@@ -1,0 +1,29 @@
+<%-include("./partials/header")-%>
+<div class="container text-center">
+    <div class="container row-12 mt-5">
+        <h3>Enter Today's Attendance</h3>
+        <h5>(space separated list)</h5>
+    </div>
+    <div class="form-floating container p-0 rounded-4 shadow row-12 my-5">
+        <textarea class="roll-nos form-control rounded-4" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px; resize: none" value=""></textarea>
+        <label for="floatingTextarea">Roll Numbers(1-70)</label>
+    </div>
+    <a class="generate-btn btn btn-primary row-12 disabled" role="button">Generate List</a>
+</div>
+
+<div class="attendance-div text-center" style="display: none; height:auto;">
+    <div class="mx-5 mt-5 border-top"></div>
+    <div class="container row-12 mt-5">
+        <h3>Attendance List</h3>
+    </div>
+    <div class="form-floating container p-0 rounded-4 shadow row-12 my-5">
+        <textarea class="attendance-list form-control rounded-4" placeholder="Leave a comment here" id="floatingTextarea" style="height: auto; word-wrap: break-word; resize: none;" value=""></textarea>
+        <label for="floatingTextarea">Today's Attendance</label>
+    </div>
+    <div class="mb-4">
+        <label role="button"><input type="checkbox" role="button" class="upload-checkbox mx-2">Is the Attendance Genuine ?</label>
+    </div>
+    <a class="copy-btn btn btn-primary row-12 mx-3" role="button" aria-disabled="false">Copy</a>
+    <a class="upload-btn btn btn-primary row-12 disabled mx-3" role="button" aria-disabled="true">Upload</a>
+</div>
+<%-include("./partials/footer")-%>

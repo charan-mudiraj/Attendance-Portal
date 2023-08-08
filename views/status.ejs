@@ -1,0 +1,70 @@
+<%-include("./partials/header")-%>
+<div class="container my-5 text-center d-flex align-items-center flex-column">
+    <div class="shadow mb-4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body ">
+              <h5 class="card-title">Enter Your Roll Number:</h5>
+              <h6 class="card-subtitle text-body-secondary mb-4">(two-digit numeric)</h6>
+              <input type="text" class="rollno-status form-control mb-2" id="basic-url" placeholder="Enter here..." aria-describedby="basic-addon3 basic-addon4">
+              <a class="mt-2 get-status-btn card-link btn btn-primary disabled" role="button">Get Status</a>
+            </div>
+        </div>
+    </div>
+    <div class="shadow status-div mt-3" style="display: none;">
+        <div class="card" style="height:auto; width: 18rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Your Attendance Status</h5>
+              <p id="status-name"></p>
+              <p id="status-rollno"></p>
+              <p id="status-presentdays"></p>
+              <p id="status-absentdays"></p>
+              <p id="status-presentper"></p>
+              <p id="status-absentper"></p>
+              <div>
+                <canvas id="myChart" style="height: 200px;"></canvas>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <script>
+  const ctx = document.getElementById('myChart');
+  const x_values = ['Present', 'Absent'];
+  const y_values = [75, 5];
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: x_values,
+      datasets: [{
+          
+        data: y_values,
+        backgroundColor: [
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(255, 99, 132, 0.2)'
+        ],
+        borderColor: [
+        'rgb(75, 192, 192)',
+          'rgb(255, 99, 132)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: {
+          legend: {
+              display: false
+          }
+      },
+      scales: {
+        y: {
+          min:0,
+          max:100
+        }
+      }
+    }
+  });
+</script> -->
+
+<%-include("./partials/footer")-%>
