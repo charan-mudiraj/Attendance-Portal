@@ -1,3 +1,8 @@
+// ALL PAGES
+$('.navbar-toggler').click(function(){
+  $('.navbar-div').slideToggle();
+});
+
 // UPLOAD PAGE
 $('.roll-nos').focus(function(){
   $(this).keyup(function(event){
