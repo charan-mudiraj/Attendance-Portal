@@ -73,7 +73,7 @@ $('.generate-btn').click(async function(){
 });
 
 $('.upload-btn').click(function(){
-  alert("Attendannce Uploaded !");
+  alert("Attendance Uploaded !");
 })
 
 
